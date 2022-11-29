@@ -480,7 +480,7 @@ elif options == '05. Error!!':
     
     st.subheader('1. 데이터 전처리 - Duration')
     
-    st.write('Duration_hour가 데이트 타임 형식으로 변환이 안 되는 오류가 발생')
+    st.write('Duration_hour가 데이트 타임 형식으로 변환이 안 되는 오류 발생')
     st.image('https://github.com/skfkeh/MachineLearning/blob/main/img/duration_error_.PNG?raw=true', caption="Duration_hour error")
     st.write('해결책 : 시간과 분을 int형으로 바꿔주고 시간을 분으로 환산해서 Duration_total 컬럼 생성.')
 
