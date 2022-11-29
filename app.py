@@ -477,15 +477,18 @@ elif options == '04. 우수 모델 선정':
 
 elif options == '05. Error!!':
     st.title('이게 참 어려웠지~(아련)')
-
-    st.subheader('1.')
     
-    st.subheader('2. 데이터 전처리 - Duration')
+    st.subheader('1. 데이터 전처리 - Duration')
     
     st.write('Duration_hour가 데이트 타임 형식으로 변환이 안 되는 오류가 발생')
     st.image('https://github.com/skfkeh/MachineLearning/blob/main/img/duration_error_.PNG?raw=true', caption="Duration_hour error")
     st.write('해결책 : 시간과 분을 int형으로 바꿔주고 시간을 분으로 환산해서 Duration_total 컬럼 생성.')
+
+    st.subheader('2. 훈련셋/시험셋')
     
+    st.write('데이터셋이 ')
+    st.write('해결책 : ')
+
     st.subheader('3. 각 알고리즘 합치기')
     
     st.write('각 알고리즘의 key 값이 충돌해서 plotly 그래프가 그려지지 않는 문제 발생')
@@ -493,3 +496,5 @@ elif options == '05. Error!!':
     st.write('해결책 : 각 알고리즘의 고유 변수명으로 변경 및 key값 부여')
     code_merge_error = '''keys = random.sample(range(1000, 9999), 3)'''
     st.code(code_merge_error, language='python')
+
+    st.subheader('4. streamlit에서 xgboost ')
