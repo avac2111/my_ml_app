@@ -487,7 +487,7 @@ elif options == '05. Error!!':
     st.subheader('2. 훈련셋/시험셋')
     
     st.write('test 파일에 종속변수인 Price가 없어서 train, test 데이터를 합칠 때 오류 발생')
-    st.image('')
+    
     st.write('해결책 : train 데이터 자체에서 훈련셋/시험셋을 구분')
 
     st.subheader('3. 각 알고리즘 합치기')
@@ -501,6 +501,6 @@ elif options == '05. Error!!':
     st.subheader('4. streamlit - xgboost')
     
     st.write('streamlit에서 xgboost 모델이 없다는 오류 발생')
-    st.image('')
+    
     st.write('해결책 : ')
 
