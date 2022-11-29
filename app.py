@@ -486,8 +486,8 @@ elif options == '05. Error!!':
 
     st.subheader('2. 훈련셋/시험셋')
     
-    st.write('test 파일에 종속변수인 Price가 없어서 train, test 데이터를 합칠 때 오류 발생')
-    
+    st.write('test 파일에 종속변수인 Price가 없어서(NaN) 데이터 전처리가 불가능')
+    st.image('https://github.com/skfkeh/MachineLearning/blob/main/img/train_test_error.PNG?raw=true', caption="test_file_NaN")
     st.write('해결책 : train 데이터 자체에서 훈련셋/시험셋을 구분')
 
     st.subheader('3. 각 알고리즘 합치기')
