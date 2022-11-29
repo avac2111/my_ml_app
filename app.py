@@ -501,6 +501,6 @@ elif options == '05. Error!!':
     st.subheader('4. streamlit - xgboost')
     
     st.write('streamlit에서 xgboost 모델이 없다는 오류 발생')
-    
+    st.image('https://github.com/skfkeh/MachineLearning/blob/main/img/xgb_error.png?raw=true', caption="streamlit_xgboost_error")
     st.write('해결책 : ')
 
