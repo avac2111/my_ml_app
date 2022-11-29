@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import os
 import time
-import graphviz
+# import graphviz
 from PIL import Image     # 이미지 처리 라이브러리
 
 import matplotlib.pyplot as plt 
@@ -479,12 +479,14 @@ elif options == '05. Error!!':
     st.title('이게 참 어려웠지~(아련)')
 
     st.subheader('1.')
+    
     st.subheader('2. 데이터 전처리 - Duration')
-    st.write('duration_hour가 데이트 타임 형식으로 변환이 안 되는 오류가 발생')
+    
+    st.write('Duration_hour가 데이트 타임 형식으로 변환이 안 되는 오류가 발생')
     st.image('https://github.com/skfkeh/MachineLearning/blob/main/img/duration_error_.PNG?raw=true', caption="Duration_hour error")
+    st.write('해결책 : 시간과 분을 int형으로 바꿔주고 시간을 분으로 환산해서 Duration_total 컬럼 생성.')
     
     st.subheader('3. 각 알고리즘 합치기')
-    
     
     st.write('각 알고리즘의 key 값이 충돌해서 plotly 그래프가 그려지지 않는 문제 발생')
     st.image('https://github.com/skfkeh/MachineLearning/blob/main/img/merge%20algorithm_key%20error.png?raw=true', caption="streamlit error 화면")
